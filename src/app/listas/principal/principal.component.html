@@ -1,0 +1,2 @@
+<app-add-lista [visible]="getVisibleTarea" (aniadirLista)="addList($event)"></app-add-lista>
+<app-mostrar-lista [listaTareas]="getTareas" (onDeleteLista)="deleteLista($event)"  (onCambiaMarca)="cambiarMarca($event)"></app-mostrar-lista>

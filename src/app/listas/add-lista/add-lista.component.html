@@ -1,0 +1,17 @@
+<div *ngIf="!visible" class="container mt-3 w-full mx-auto animate__animated animate__backInUp">
+    <form class="mx-auto" (ngSubmit)="onNuevaLista()">
+        <div class="grid md:grid-cols-3 md:gap-4">
+            <div class="relative z-0 w-full mb-2 mt-2">
+                <input [(ngModel)]="listaTemp.name" type="text" name="titulo"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Título" required>
+            </div>
+            <div class="relative z-0 w-full mb-2 mt-2">
+                <input [(ngModel)]="listaTemp.desc" type="text" name="desc"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Descripción" required>
+            </div>
+            <button class="w-full mt-2" type="submit" mat-raised-button color="primary">Añadir</button>
+        </div>
+    </form>
+</div>
